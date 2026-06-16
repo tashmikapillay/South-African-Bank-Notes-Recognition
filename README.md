@@ -60,7 +60,7 @@ dataset/
 **For Google Colab**, upload the `dataset/` folder to your Google Drive at the following path before running:
 
 ```
-MyDrive/COMP702/dataset/
+MyDrive/dataset/
 ```
 
 The notebook automatically detects whether it is running on Colab or locally and sets the dataset path accordingly. No manual path changes are needed.
