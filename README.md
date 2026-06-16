@@ -1,4 +1,4 @@
-# South-African-Bank-Notes-Recognition
+# 💵 South African Bank Notes Recognition
 
 This project builds a full image processing and computer vision pipeline to classify South African bank notes across five denominations: R10, R20, R50, R100, and R200, covering both old and new series notes.
 
@@ -13,7 +13,7 @@ The system is invariant to the side photographed (front or back), scale, and rot
 
 ---
 
-## Repository Structure
+## 🗂️ Repository Structure
 
 ```
 .
@@ -29,7 +29,7 @@ The system is invariant to the side photographed (front or back), scale, and rot
 
 ---
 
-## Requirements
+## 🛠️ Requirements
 
 The notebook runs on Python 3.10 or later. Install dependencies with:
 
@@ -41,7 +41,7 @@ Or if you are on Google Colab, all of these are already available except `ipywid
 
 ---
 
-## Dataset Setup
+## 📂 Dataset Setup
 
 The notebook expects images organised into denomination subfolders. Each subfolder should be named after its denomination exactly as shown below.
 
@@ -69,9 +69,9 @@ Accepted image formats: `.jpg`, `.jpeg`, `.png`, `.bmp`
 
 ---
 
-## How to Run
+## 🚀 How to Run
 
-### Option 1 — Google Colab (recommended)
+### Option 1 — Google Colab (Recommended)
 
 1. Open [Google Colab](https://colab.research.google.com/) and upload `South African Bank Note Recognition.ipynb`, or open it directly from GitHub via the Colab interface.
 2. Upload the `dataset/` folder to `MyDrive/dataset/` in your Google Drive.
@@ -82,7 +82,7 @@ Accepted image formats: `.jpg`, `.jpeg`, `.png`, `.bmp`
 
 1. Clone or download this repository.
 2. Place the `dataset/` folder next to the notebook as described above.
-3. Install dependencies (see Requirements).
+3. Install dependencies (see Requirements above).
 4. Launch Jupyter and open the notebook:
 
 ```bash
@@ -93,10 +93,10 @@ South African Bank Note Recognition.ipynb
 
 ---
 
-## Pipeline Summary
+## 🔄 Pipeline Summary
 
 | Stage | Technique |
-|---|---|
+|-------|-----------|
 | Preprocessing | Grayscale, CLAHE, Gaussian blur |
 | Segmentation | Otsu's thresholding (primary), Canny + contour (comparison) |
 | Feature Extraction | HOG + LBP + Colour histogram (concatenated) |
@@ -104,10 +104,10 @@ South African Bank Note Recognition.ipynb
 
 ---
 
-## Results
+## 📊 Results
 
 | Classifier | Test Accuracy |
-|---|---|
+|------------|---------------|
 | Random Forest | 98.92% |
 | Support Vector Machine | 98.20% |
 | K-Nearest Neighbours | 88.13% |
@@ -116,7 +116,7 @@ Tested on a stratified 80/20 train-test split of 1 386 images (154 originals exp
 
 ---
 
-## Notes
+## 🔁 Notes
 
 - Random seeds are fixed (`seed=42`) throughout so results are fully reproducible.
 - The notebook saves several snapshot images to disk during execution (e.g. `snapshot_preprocessing.png`). These are used in the project report.
